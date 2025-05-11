@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/a1f7bfba-523b-48d9-bdb2-2f8d0a43f573
   Each bird is controlled by a simple feedforward network implemented in PyTorch. The network takes three inputs (distance y from bird to top and bottom pipe and distance x from bird to pipe) and outputs a probability to flap.
   <img src="images/NN.png">
 
-  ### Crossover
+### Crossover
 The **crossover** method creates a new child model by combining the parameters of two parent networks. For each parameter tensor (i.e. weights and biases):
 
 - A random mask is generated using `torch.rand_like`, with each element having a 50% chance of being selected.
