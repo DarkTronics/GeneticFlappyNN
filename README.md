@@ -35,6 +35,21 @@ https://github.com/user-attachments/assets/a1f7bfba-523b-48d9-bdb2-2f8d0a43f573
   Each bird is controlled by a simple feedforward network implemented in PyTorch. The network takes three inputs (distance y from bird to top and bottom pipe and distance x from bird to pipe) and outputs a probability to flap.
   <img src="images/NN.png">
 
+  ### Crossover
+The **crossover** method creates a new child model by combining the parameters of two parent networks. For each parameter tensor (i.e. weights and biases):
+
+- A random mask is generated using `torch.rand_like`, with each element having a 50% chance of being selected.
+- Each element of the child’s parameter is chosen from either parent based on the random mask.
+- This process produces a network that is a mix of both parents and can potentially inherit strengths from each.
+
+### Mutation
+The **mutation** method introduces randomness to the network’s parameters to maintain diversity in the population and to explore new solutions. For each parameter tensor in the network:
+
+- A random mutation mask is generated with a given mutation rate (e.g., 10%).
+- Random noise (scaled by a mutation strength factor) is added to each element where the mutation mask is true.
+- This small perturbation helps avoid local minima and can lead to novel network behaviors when evolving.
+
+
 
 - **Visualization & Charting:**  
   A simple table on-screen tracks generation number and score over time.
@@ -83,7 +98,7 @@ The simulation window will open displaying the game. The genetic algorithm conti
   Adjust variables such as `NUM_BIRDS`, `FLAP`, `GRAVITY`, `PIPE_SPEED`, and FPS within `Flappy.py`.
 
 - **Genetic Algorithm Settings:**  
-  Modify the selection ratio (e.g. top 10%), mutation rate, and mutation strength in the `next_generation()` function.
+  Modify the selection ratio (e.g. top 1%), mutation rate, and mutation strength in the `next_generation()` function.
 
 - **Neural Network:**  
   The architecture can be altered in `NeuralNetwork.py`.
