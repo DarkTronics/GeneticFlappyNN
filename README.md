@@ -109,10 +109,6 @@ The simulation window will open displaying the game. The genetic algorithm conti
 - Save/load trained models.
 - Integrate user controls to toggle between training and manual play.
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## Acknowledgments
 
 - Inspired by the classic Flappy Bird game.
