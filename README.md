@@ -51,8 +51,8 @@ The **mutation** method introduces randomness to the network’s parameters to m
 
 
 
-- **Visualization & Charting:**  
-  A simple table on-screen tracks generation number and score over time.
+### Visualization & Charting:
+  A simple table on-screen tracks the generation number and score over time.
 
 ## Requirements
 
