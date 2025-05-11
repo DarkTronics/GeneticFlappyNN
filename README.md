@@ -8,14 +8,14 @@ Simple genetic algorithm combined with a neural network (implemented in PyTorch)
   <div>
     <h3>Early gen</h3>
     <video width="400" controls>
-      <source src="./images/earlygen.mp4" type="video/mp4">
+      <source src="images/earlygen.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
   <div>
     <h3>Newest gen</h3>
     <video width="400" controls>
-      <source src="./images/newgen.mp4" type="video/mp4">
+      <source src="images/newgen.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
