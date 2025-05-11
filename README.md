@@ -1,23 +1,25 @@
 # GeneticFlappyNN
 
-Simple genetic algorithm combined with a neural network (implemented in PyTorch) to evolve agents (birds) which learn to navigate through pipes, to make an ai that can learn to play FlappyBird. Over multiple generations the algorithm selects the best performing birds based on fitness and breeds new models via crossover and mutation.
+Simple genetic algorithm combined with a neural network (implemented in PyTorch) to evolve agents (birds) which learn to navigate through pipes, to make an AI that can learn to play FlappyBird. The network processes 3 inputs (Distance of bird to top pipe, bottom pipe, and horizontal distance to the pipe) through 2 hidden layers, size 16 and 8, output is one node with a sigmoid that predicts whether the bird should flap or not. Over multiple generations the algorithm selects the best performing birds based on fitness and breeds new models via crossover and mutation.
 
 ## Generation Videos
 
 <div style="display: flex; justify-content: space-around; align-items: flex-start;">
   <div>
     <h3>Early gen</h3>
-    <video width="400" controls>
-      <source src="images/earlygen.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    
+
+https://github.com/user-attachments/assets/10e77bc5-b4f0-4e07-bcf0-26cd118919de
+
+
   </div>
   <div>
     <h3>Newest gen</h3>
-    <video width="400" controls>
-      <source src="images/newgen.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    
+
+https://github.com/user-attachments/assets/a1f7bfba-523b-48d9-bdb2-2f8d0a43f573
+
+
   </div>
 </div>
 
